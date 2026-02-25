@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>有資貓電腦資訊 YUZMEOW | 辦公室電腦硬體規劃・建置・維護</title>
+  <meta name="description" content="有資貓電腦資訊 YUZMEOW，提供台中企業辦公室電腦硬體規劃、建置及維護服務，客製化能力強、售後服務到位、深耕在地市場。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;600;700;900&family=Inter:wght@300;400;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <div class="nav-logo-icon">
+          <img src="logo_color.png" alt="YUZMEOW Logo icon" id="nav-logo-img" />
+        </div>
+        <span class="nav-logo-text">YUZMEOW</span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="開啟選單">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-link">關於我們</a></li>
+        <li><a href="#services" class="nav-link">服務項目</a></li>
+        <li><a href="#advantage" class="nav-link">核心優勢</a></li>
+        <li><a href="#contact" class="nav-cta">立即聯絡</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section id="hero" class="hero">
+    <canvas id="particleCanvas"></canvas>
+    <div class="hero-grid-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        台中在地 IT 服務商
+      </div>
+      <h1 class="hero-title">
+        辦公室的<br />
+        <span class="hero-highlight">電腦管理專家</span>
+      </h1>
+      <p class="hero-subtitle">
+        有資貓電腦資訊 · YUZMEOW<br />
+        規劃 · 建置 · 維護，一站式搞定企業電腦設備
+      </p>
+      <div class="hero-buttons">
+        <a href="#services" class="btn-primary" id="heroServicesBtn">探索服務</a>
+        <a href="#contact" class="btn-outline" id="heroContactBtn">免費諮詢</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number">8+</span>
+          <span class="stat-label">服務項目</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">100%</span>
+          <span class="stat-label">在地服務</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number">到府</span>
+          <span class="stat-label">維修支援</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>向下捲動</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT ========== -->
+  <section id="about" class="about section-padding">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-media reveal-left">
+          <div class="about-img-wrapper">
+            <img src="about_us.png" alt="有資貓電腦資訊專業工程師" loading="lazy" />
+            <div class="about-img-badge">
+              <span class="badge-icon">⚡</span>
+              <div>
+                <strong>專業認證</strong>
+                <small>硬體規劃・維護</small>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-content reveal-right">
+          <div class="section-label">ABOUT US</div>
+          <h2 class="section-title">用科技<span class="text-accent">賦能</span>您的辦公室</h2>
+          <p class="about-desc">
+            和程科技有限公司旗下品牌「有資貓電腦資訊(YUZMEOW)」，深耕台中在地市場，
+            專注於企業辦公室 IT 設備的整體解決方案。
+          </p>
+          <p class="about-desc">
+            我們擁有紮實的專業背景與實績經驗，從需求規劃、設備採購、環境建置到日常維護，
+            全程陪伴企業成長，讓您的辦公設備永遠保持最佳狀態。
+          </p>
+          <div class="about-features">
+            <div class="feature-item">
+              <div class="feature-num">01</div>
+              <div>
+                <strong>專業背景</strong>
+                <p>深厚的硬體知識與實務經驗，提供最精準的設備建議</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-num">02</div>
+              <div>
+                <strong>實績經驗</strong>
+                <p>累積多家企業成功導入案例，交付品質有目共睹</p>
+              </div>
+            </div>
+            <div class="feature-item">
+              <div class="feature-num">03</div>
+              <div>
+                <strong>台中在地</strong>
+                <p>西屯、西區、中區快速到府，響應時間業界最快</p>
+              </div>
+            </div>
+          </div>
+          <a href="#contact" class="btn-primary" id="aboutContactBtn">了解更多</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== SERVICES ========== -->
+  <section id="services" class="services section-padding">
+    <div class="services-bg-overlay"></div>
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-label">OUR SERVICES</div>
+        <h2 class="section-title">全方位 <span class="text-accent">IT 服務</span> 一次到位</h2>
+        <p class="section-desc">從規劃到維護，有資貓提供企業所需的一切電腦資訊服務</p>
+      </div>
+      <div class="services-grid">
+
+        <div class="service-card reveal-up" style="--delay: 0.05s">
+          <div class="service-icon-wrap">
+            <div class="service-icon">🖥️</div>
+          </div>
+          <h3>辦公室設備<br />規劃統包</h3>
+          <p>從零開始建立辦公室 IT 環境，包含需求分析、設備選型與整體規劃</p>
+        </div>
+
+        <div class="service-card reveal-up" style="--delay: 0.1s">
+          <div class="service-icon-wrap">
+            <div class="service-icon">🏢</div>
+          </div>
+          <h3>商用企業<br />電腦周邊</h3>
+          <p>各類商用電腦、顯示器、鍵盤、滑鼠及周邊設備採購與建議</p>
+        </div>
+
+        <div class="service-card reveal-up" style="--delay: 0.15s">
+          <div class="service-icon-wrap">
+            <div class="service-icon">💻</div>
+          </div>
+          <h3>電腦・筆電<br />銷售升級</h3>
+          <p>提供品牌電腦、筆電銷售，並為舊設備進行升級改造延長使用壽命</p>
+        </div>
+
+        <div class="service-card reveal-up" style="--delay: 0.2s">
+          <div class="service-icon-wrap">
+            <div class="service-icon">📷</div>
+          </div>
+          <h3>監控系統<br />弱電工程</h3>
+          <p>IP 監控攝影機安裝、弱電佈線規劃，保障辦公室安全</p>
+        </div>
+
+        <div class="service-card reveal-up" style="--delay: 0.25s">
+          <div class="service-icon-wrap">
+            <div class="service-icon">🖨️</div>
+          </div>
+          <h3>印表機<br />買賣・租賃</h3>
+          <p>各品牌印表機銷售與租賃方案，依企業需求靈活選擇最划算方式</p>
+        </div>
+
+        <div class="service-card reveal-up" style="--delay: 0.3s">
+          <div class="service-icon-wrap">
+            <div class="service-icon">🔧</div>
+          </div>
+          <h3>線上諮詢<br />到府維修</h3>
+          <p>遠端快速診斷或派員到府維修，設備故障不再讓您煩惱</p>
+        </div>
+
+        <div class="service-card reveal-up" style="--delay: 0.35s">
+          <div class="service-icon-wrap">
+            <div class="service-icon">🧾</div>
+          </div>
+          <h3>POS 系統<br />建置維護</h3>
+          <p>零售業 POS 收銀系統建置與維護，提升結帳效率與管理精準度</p>
+        </div>
+
+        <div class="service-card reveal-up" style="--delay: 0.4s">
+          <div class="service-icon-wrap">
+            <div class="service-icon">📈</div>
+          </div>
+          <h3>ERP 系統<br />建置維護</h3>
+          <p>企業資源規劃系統導入與維護，整合業務流程提升整體效率</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ADVANTAGE ========== -->
+  <section id="advantage" class="advantage section-padding">
+    <div class="container">
+      <div class="section-header reveal-up">
+        <div class="section-label">WHY CHOOSE US</div>
+        <h2 class="section-title">三大核心<span class="text-accent">優勢</span></h2>
+        <p class="section-desc">選擇有資貓，讓您的企業 IT 從此沒有後顧之憂</p>
+      </div>
+      <div class="advantage-grid">
+
+        <div class="advantage-card reveal-up" style="--delay: 0s">
+          <div class="adv-number">01</div>
+          <div class="adv-icon-circle">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="24" cy="24" r="20" stroke="currentColor" stroke-width="2.5" />
+              <path d="M16 24h4l3-8 4 16 3-8h4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3>客製化能力</h3>
+          <p>我們不賣套裝方案，而是深入了解您的業務需求，量身打造最適合的 IT 解決方案，每個企業都是獨特的。</p>
+          <ul class="adv-list">
+            <li>需求分析與規劃</li>
+            <li>彈性設備配置</li>
+            <li>專屬系統建置</li>
+          </ul>
+        </div>
+
+        <div class="advantage-card advantage-card--featured reveal-up" style="--delay: 0.1s">
+          <div class="adv-number">02</div>
+          <div class="adv-icon-circle">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 6l4.24 8.6L38 16.18l-7 6.82 1.65 9.62L24 28.1l-8.65 4.52L17 23 10 16.18l9.76-1.58z"
+                stroke="currentColor" stroke-width="2.5" stroke-linejoin="round" />
+            </svg>
+          </div>
+          <h3>完善售後服務</h3>
+          <p>購買或建置後，我們的服務才剛開始。提供完整的售後保固與技術支援，讓您隨時都有可靠的 IT 夥伴。</p>
+          <ul class="adv-list">
+            <li>設備保固服務</li>
+            <li>定期健檢維護</li>
+            <li>24hr 緊急聯繫</li>
+          </ul>
+        </div>
+
+        <div class="advantage-card reveal-up" style="--delay: 0.2s">
+          <div class="adv-number">03</div>
+          <div class="adv-icon-circle">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 6C17.37 6 12 11.37 12 18c0 9 12 24 12 24s12-15 12-24c0-6.63-5.37-12-12-12z"
+                stroke="currentColor" stroke-width="2.5" />
+              <circle cx="24" cy="18" r="4" stroke="currentColor" stroke-width="2.5" />
+            </svg>
+          </div>
+          <h3>在地深耕服務</h3>
+          <p>以台中為根據地，快速到府響應，充分了解在地企業需求，讓服務更即時、更貼心。</p>
+          <ul class="adv-list">
+            <li>台中在地快速到府</li>
+            <li>熟悉在地商業環境</li>
+            <li>長期夥伴關係經營</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT ========== -->
+  <section id="contact" class="contact section-padding">
+    <div class="contact-city-bg">
+      <img src="contact_map.png" alt="台中市景" loading="lazy" />
+      <div class="contact-city-overlay"></div>
+    </div>
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal-left">
+          <div class="section-label">CONTACT US</div>
+          <h2 class="section-title">立即<span class="text-accent">聯絡</span>我們</h2>
+          <p class="contact-intro">有任何電腦、設備需求或問題，歡迎透過以下方式與我們聯絡，我們會盡快回覆！</p>
+
+          <div class="contact-items">
+            <div class="contact-item" id="contactPhone">
+              <div class="contact-item-icon">📞</div>
+              <div>
+                <strong>聯絡電話</strong>
+                <a href="tel:0937487789">0937-487789</a>
+              </div>
+            </div>
+            <div class="contact-item" id="contactEmail">
+              <div class="contact-item-icon">✉️</div>
+              <div>
+                <strong>電子信箱</strong>
+                <a href="mailto:samvov.jut@gmail.com">samvov.jut@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-item" id="contactLine">
+              <div class="contact-item-icon">💬</div>
+              <div>
+                <strong>官方 LINE</strong>
+                <a href="https://line.me/ti/p/@988lsspi" target="_blank" rel="noopener">@988lsspi</a>
+              </div>
+            </div>
+            <div class="contact-item" id="contactAddress">
+              <div class="contact-item-icon">📍</div>
+              <div>
+                <strong>公司地址</strong>
+                <span>403 臺中市西區臺灣大道二段285號<br />8樓之3（8M室）</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-cta-group">
+            <a href="tel:0937487789" class="btn-primary" id="ctaPhone">📞 立即撥打</a>
+            <a href="https://line.me/ti/p/@988lsspi" target="_blank" rel="noopener" class="btn-line" id="ctaLine">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20">
+                <path
+                  d="M19.365 9.863c.349 0 .63.285.63.631 0 .345-.281.63-.63.63H17.61v1.125h1.755c.349 0 .63.283.63.63 0 .344-.281.629-.63.629h-2.386c-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63h2.386c.349 0 .63.285.63.63 0 .349-.281.63-.63.63H17.61v1.125h1.755zm-3.855 3.016c0 .27-.174.51-.432.596-.064.021-.133.031-.199.031-.211 0-.391-.09-.51-.25l-2.443-3.317v2.94c0 .344-.279.629-.631.629-.346 0-.626-.285-.626-.629V8.108c0-.27.173-.51.43-.595.06-.023.136-.033.194-.033.195 0 .375.104.495.254l2.462 3.33V8.108c0-.345.282-.63.63-.63.345 0 .63.285.63.63v4.771zm-5.741 0c0 .344-.282.629-.631.629-.345 0-.627-.285-.627-.629V8.108c0-.345.282-.63.627-.63.349 0 .631.285.631.63v4.771zm-2.466.629H4.917c-.345 0-.63-.285-.63-.629V8.108c0-.345.285-.63.63-.63.348 0 .63.285.63.63v4.141h1.756c.348 0 .629.283.629.63 0 .344-.281.629-.629.629M24 10.314C24 4.943 18.615.572 12 .572S0 4.943 0 10.314c0 4.811 4.27 8.842 10.035 9.608.391.082.923.258 1.058.59.12.301.079.766.038 1.08l-.164 1.02c-.045.301-.24 1.186 1.049.645 1.291-.539 6.916-4.078 9.436-6.975C23.176 14.393 24 12.458 24 10.314" />
+              </svg>
+              加入 LINE 好友
+            </a>
+          </div>
+        </div>
+
+        <div class="contact-map-card reveal-right">
+          <div class="map-embed-wrapper">
+            <iframe id="googleMap"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640.5355906524283!2d120.6638100114499!3d24.152942378307813!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693d762cb04e85%3A0xd0a48fdb7d9f08ea!2zNDAz6Ie65Lit5biC6KW_5Y2A6Ie654Gj5aSn6YGT5LqM5q61Mjg16Jmf5a-w5a6H5a-m5qWt5aSn5buI!5e0!3m2!1szh-TW!2stw!4v1772031369048!5m2!1szh-TW!2stw"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="和程科技有限公司地圖位置">
+            </iframe>
+            <!-- 公司資訊卡 overlay -->
+            <div class="map-info-overlay">
+              <div class="map-info-logo-row">
+                <div class="map-info-icon">
+                  <div class="nav-logo-icon" style="width:32px;height:23px">
+                    <img src="logo_color.png" alt="YUZMEOW Logo icon" class="map-logo" style="width:32px" />
+                  </div>
+                </div>
+                <div>
+                  <div class="map-info-name">有資貓電腦資訊</div>
+                  <div class="map-info-sub">YUZMEOW</div>
+                </div>
+              </div>
+              <div class="map-info-detail">
+                <span class="map-info-row">📍 臺中市西區臺灣大道二段285號 8F-3</span>
+                <span class="map-info-row">📞 0937-487789</span>
+              </div>
+              <a href="https://maps.app.goo.gl/Pb8V9" target="_blank" rel="noopener" class="map-info-link">在 Google Maps
+                中開啟 →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo-wrap">
+            <div class="footer-logo-icon">
+              <img src="logo_color.png" alt="YUZMEOW Logo icon" />
+            </div>
+            <span class="footer-logo-text">YUZMEOW</span>
+          </div>
+          <p>有資貓電腦資訊<br />專業辦公室 IT 夥伴</p>
+        </div>
+        <div class="footer-links">
+          <h4>服務項目</h4>
+          <ul>
+            <li><a href="#services">辦公設備規劃統包</a></li>
+            <li><a href="#services">電腦・筆電銷售</a></li>
+            <li><a href="#services">監控系統弱電工程</a></li>
+            <li><a href="#services">POS / ERP 建置</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>聯絡方式</h4>
+          <ul>
+            <li><a href="tel:0937487789">0937-487789</a></li>
+            <li><a href="mailto:samvov.jut@gmail.com">samvov.jut@gmail.com</a></li>
+            <li>LINE: @988lsspi</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 和程科技有限公司 · 有資貓電腦資訊 YUZMEOW. All Rights Reserved.</p>
+        <p>統一編號：93660012 | 403 臺中市西區臺灣大道二段285號8樓之3</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
